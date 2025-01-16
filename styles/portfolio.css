@@ -1,5 +1,4 @@
 
-
 .open-sans-normal {
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;
@@ -41,6 +40,7 @@
      color: white;
      font-weight: bold;
      cursor: pointer;
+     margin-right: 20px;
   }
 /* header */
 .header{
@@ -85,6 +85,7 @@
   }
   .banner-content{
     max-width: 550px;
+    /* width: 550px; */
     padding-bottom: 162px;
   }
   .banner-greetings{
@@ -136,4 +137,43 @@ main section{
   padding: 24px;
   border-radius: 15px;
   box-shadow: 0px 6px 20px 0px #2b2a2a ;
+}
+
+/* resume section */
+.resume-container{
+  display: flex;
+  gap: 50px;
+}
+.resume-colume-title{
+  font-weight: 700;
+  font-size: 30px;
+  color: #474747;
+}
+.experience-title{
+  font-weight: 700;
+  font-size: 25px;
+  color: #474747;
+}
+.resume-download-cv{
+   margin-top: 50px ;
+}
+
+/* footer */
+footer{
+  padding: 130px 230px;
+  display: flex;
+  gap: 120px;
+}
+.footer-colum{
+  width: 50%;
+}
+footer input[type="text"] , input[type="email"]{
+  height: 44px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+  display: block;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
 }
