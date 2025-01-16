@@ -186,7 +186,7 @@ footer input[type="text"] , footer input[type="email"], footer textarea{
 
 @media screen and (max-width:576px) {
   .nav-title{
-       display: none;
+       /* display: none; */
   }
   .section-description {
     text-align: center;
@@ -206,8 +206,14 @@ main section{
    .about-item {
    margin-bottom: 20px;
 }
-    .skills-container, nav, .banner{
+    .skills-container,
+     nav, 
+     nav > ul,
+     .banner{
       flex-direction: column;
+    }
+    nav > ul{
+      gap: 10px;
     }
     .resume-container{
       text-align: center;
