@@ -98,6 +98,7 @@
   }
   .banner-profile-pic{
     width: 580px;
+    /* width: 40%; */
   }
 /* main */
 main{
@@ -167,7 +168,7 @@ footer{
 .footer-colum{
   width: 50%;
 }
-footer input[type="text"] , input[type="email"]{
+footer input[type="text"] , footer input[type="email"], footer textarea{
   height: 44px;
   width: 100%;
   border-radius: 5px;
@@ -176,4 +177,50 @@ footer input[type="text"] , input[type="email"]{
   font-size: 16px;
   padding: 10px 20px;
   margin-bottom: 20px;
+}
+
+/* responsive media query */
+.hide{
+  display: none;
+}
+
+@media screen and (max-width:576px) {
+  .nav-title{
+       display: none;
+  }
+  .section-description {
+    text-align: center;
+   }
+   .header{
+    background-image: none;
+   }
+   .banner{
+    margin: 20px;
+   }
+   .banner-profile-pic {
+   width: 100%;
+}
+main section{
+  margin: 0px 30px;
+}
+   .about-item {
+   margin-bottom: 20px;
+}
+    .skills-container, nav, .banner{
+      flex-direction: column;
+    }
+    .resume-container{
+      text-align: center;
+      flex-direction: column;
+    }
+    footer, .about, .about-items{
+      padding: 20px;
+      flex-direction: column;
+    }
+    .footer-colum {
+     width: 100%;
+  }
+  footer input[type="text"] , footer input[type="email"], footer textarea{
+    width: calc(100% - 40px);
+  }
 }
